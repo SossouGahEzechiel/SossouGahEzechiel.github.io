@@ -29,13 +29,6 @@
 	<!-- Template Main CSS File -->
 	<link href="assets/css/style.css" rel="stylesheet">
 
-	<!-- =======================================================
-	* Template Name: iPortfolio
-	* Updated: Nov 17 2023 with Bootstrap v5.3.2
-	* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-	* Author: BootstrapMade.com
-	* License: https://bootstrapmade.com/license/
-	======================================================== -->
 </head>
 
 <body>
@@ -69,8 +62,9 @@
 				</li>
 				<li><a href="#mon-cv" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Curriculum
                 vitæ</span></a></li>
-				<li><a href="#quelques-realisation" class="nav-link scrollto"><i class="bx bx-book-content"></i>
-					<span>Quelques réalisations</span></a></li>
+				<!--				<li><a href="#quelques-realisation" class="nav-link scrollto"><i class="bx bx-book-content"></i>-->
+				<!--					<span>Quelques réalisations</span></a>-->
+				<!--				</li>-->
 
 				<li>
 					<a href="#me-contacter" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Me contacter</span></a>
@@ -385,7 +379,7 @@
 					<div class="resume-item">
 						<h4>DÉVELOPPEUR full stack WEB</h4>
 						<h5>Juillet 2023 – novembre 2023</h5>
-						<p><em>Free lance</em></p>
+						<p><em>Freelance</em></p>
 						<p class="text-justify">
 							Développement de la partie Web (administrative) et mise en place des API
 							pour l’application mobile « Univ En Poche ». Univ En Poche est une application mobile conçue pour
@@ -485,7 +479,8 @@
 			</div>
 
 		</div>
-	</section><!-- End Resume Section -->
+	</section>
+	<!-- End Resume Section -->
 
 	<!-- ======= Portfolio Section ======= -->
 	<!--	<section id="quelques-realisation" class="portfolio section-bg">-->
@@ -803,7 +798,7 @@
 				</div>
 
 				<div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-					<form action="forms/contact.php" method="post" role="form" class="php-email-form">
+					<form method="post" action="#" id="contact-form" enctype="text/plain" role="form" class="php-email-form">
 						<div class="row">
 							<div class="form-group col-md-6">
 								<label for="name">Votre nom et prénom.s</label>
@@ -822,10 +817,10 @@
 							<label for="message">Votre message</label>
 							<textarea class="form-control" id="message" name="message" rows="10" required></textarea>
 						</div>
-						<div class="my-3">
-							<div class="loading">Loading</div>
-							<div class="error-message"></div>
-							<div class="sent-message">Your message has been sent. Thank you!</div>
+						<div class="my-3 bg-success">
+							<div class="loading">Envoie en cours</div>
+							<div class="error-message">Désolé, une erreur est survenue</div>
+							<div class="sent-message">Votre message a été envoyé avec succès, Merci!</div>
 						</div>
 						<div class="text-center">
 							<button type="submit">Envoyer mon message</button>
@@ -860,16 +855,20 @@
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
 	class="bi bi-arrow-up-short"></i></a>
 
-<!-- Vendor JS Files -->
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+<script type="text/javascript"
+				src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+	<!-- Vendor JS Files -->
+	<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
 <script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/js/email.js" type="module"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/typed.js/typed.umd.js"></script>
 <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
+<!--<script src="assets/vendor/php-email-form/validate.js"></script>-->
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>

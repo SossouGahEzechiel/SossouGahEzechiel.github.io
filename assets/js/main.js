@@ -269,7 +269,7 @@
   /**
    * Initiate Pure Counter 
    */
-  new PureCounter();
+  // new PureCounter();
 
   select('#year').innerHTML = (new Date).getFullYear()
 })()
